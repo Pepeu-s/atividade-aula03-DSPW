@@ -62,12 +62,12 @@ console.log(todosOsTitulos);
 
 const livrosDoAutor = (autor) => { return livros.filter(livro => livro.autor === autor)}
 const livrosDeAutorAposAno = (autor, ano) => {
-    return livrosDoAutor(autor).filter(livro => livro.ano > ano);};
+    return livrosDoAutor(autor).filter(livro => livro.anoPublicacao > ano);};
 
 
 // Teste da Atividade 4
 console.log('\n--- Atividade 4: Livros de J.R.R. Tolkien publicados após 1950 ---');
-const livrosTolkienPos1950 = livrosDeAutorAposAno('J.R.R. Tolkien', 1900);
+const livrosTolkienPos1950 = livrosDeAutorAposAno('J.R.R. Tolkien', 1950);
 console.log(livrosTolkienPos1950);
 
 
